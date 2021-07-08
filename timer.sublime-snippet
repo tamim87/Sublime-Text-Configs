@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+
+
+//The time_monitor() code starts here
+// to get time : time__(function_name)
+inline void time_monitor( const string& s, const function< void() >& procedure )
+{
+#ifndef ONLINE_JUDGE
+    typedef chrono::high_resolution_clock clock_t;
+    auto start_time  = clock_t::now();
+#endif // ONLINE_JUDGE
+    procedure();
+#ifndef ONLINE_JUDGE
+    auto duration = clock_t::now() - start_time;
+    typedef chrono::milliseconds time_scale;
+    auto elapsed_time = chrono::duration_cast< time_scale >( duration ).count();
+    cout << "void " << s << "() used " << elapsed_time << " ms\n";
+#endif // ONLINE_JUDGE
+}
+ 
+#define time__( procedure ) time_monitor( #procedure, procedure )
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>timer</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
