@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"CppFastOlympicCoding",
-		"Package Control"
-	]
+		"Dracula Color Scheme",
+		"Package Control",
+	],
 }

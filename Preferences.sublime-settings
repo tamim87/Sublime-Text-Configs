@@ -4,7 +4,8 @@
 	"font_size": 13,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
 	"theme": "Adaptive.sublime-theme",
+	"index_files": true,
 }
