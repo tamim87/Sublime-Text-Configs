@@ -8,4 +8,12 @@
 	],
 	"theme": "Adaptive.sublime-theme",
 	"index_files": true,
+
+	// "save_on_focus_lost": true,
+	"auto_hide_menu": true, 
+	// "caret_style": "phase",
+	// "highlight_line": true,
+	// "auto_hide_tabs": true,
+	// "auto_hide_status_bar": true,
+	// "overlay_scroll_bars": "enabled",
 }

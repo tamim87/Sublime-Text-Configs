@@ -41,5 +41,8 @@
       			"key": "auto_complete_visible", "operator": "equal", "operand": false 
       		}
       ]
-  }
+  },
+
+  { "keys": ["ctrl+`"], "command": "toggle_side_bar" },
+  { "keys": ["super+shift+t"], "command": "open_terminal" },
 ]
