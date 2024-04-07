@@ -4,18 +4,19 @@
 
 using namespace std;
 
-typedef long long ll;
-typedef pair<int,int> pi;
+using ll = long long;
+using pi = pair<int, int>;
 const char nl = '\n';
 const char gg = ' ' ;
 template<class T> T cmax(T a, T b){return (a>b?a:b);}
+template <typename T> void __print(const T &x) { cerr << x << '\n'; }
 
 #define ff first
 #define ss second
 #define pb push_back
 #define all(x) x.begin(),x.end()
 #define w(x) cout << (#x) << " is " << x << "\n" ;
-#define fast ios_base::sync_with_stdio(false) , cin.tie(0) ;
+#define fast ios_base::sync_with_stdio(false) , cin.tie(nullptr) ;
 
 void solve()
 {
@@ -24,6 +25,10 @@ void solve()
 
 int main()
 {
+#ifdef LOCAL
+    // freopen("in.txt","r",stdin);
+    // freopen("out.txt","w",stdout);
+#endif 
     fast ;
     int t = 1;
     cin >> t;
